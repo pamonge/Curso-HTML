@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Archivos Multimedia</h1>
+
+    <h4>Videos</h4>
+    <!-- Esta es una opción de poner el video, pero no es la correcta -->
+    <video src="../assets/video/Rick Astley - Never Gonna Give You Up (Remastered 4K 60fps,AI).mp4" controls></video>
+
+    <br>
+
+    <!-- Esta es la opción correcta de poner un video, de esta manera se soluciona, o se intenta solucionar el problema en el caso de que el navegador no soporte el archivo, es importante especificar el tipo de archivo en el atributo type -->
+    <video autoplay controls muted>
+        <source src="../assets/video/Limahl - Never Ending Story (Official Music Video).mp4" type="video/mp4">
+        <!-- Se deberia agregar el mismo video en mas formatos -->
+        Su navegador no soporta este tipo de archivos <!-- Esta leyenda aparece en caso de que ningun formato funcione -->
+    </video>
+
+    <h4>Audio</h4>
+
+    <!-- Como en el video, en el audio se puede mudar src a una etiqueta interna -->
+    <audio controls>
+        <source src="../assets/audio/videoplayback.webm">
+    </audio>
+
+    <p>Algunos atributos</p>
+
+    <ul>
+        <li>controls: habilita los controles de cualquier video</li>
+        <li>autoplay: al momento de cargar la página el video se reproduce</li>
+        <li>muted: al momento de iniciar el video comienza muteado</li>
+        <li>allowfullscreen: permite pantalla completa</li>
+    </ul>
+
+</body>
+</html>
